@@ -142,8 +142,35 @@
             <section id="academics">
                 <h2>Academics</h2>
                 <ul>
-                    <li>Carnegie Mellon University, Heinz College, <b>Information Systems Management</b>. <i>Graduate studies (in progress, est. 12/2017)</i></li>
-                    <li>Hong Kong University of Science and Technology, <b>Global Business and Operations Management</b>. <i>Undergraduate degree, 2015.</i></li>
+                    <li>Carnegie Mellon University, Heinz College, <b>Information Systems Management</b>. <i>Graduate studies (in progress, est. 12/2017)</i>
+                        <a style="padding-left: 8px" onclick="seeCourseworkCMU()"><u>Coursework.</u></a>
+                    <div id="courseListCMU" style="display: none">
+                        <ul>
+                            <li>Search Engines</li>
+                            <li>Distributed Systems</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Client Side Web Technologies</li>
+                            <li>IT Project Management</li>
+                            <li>Business Intelligence and Data Mining</li>
+                            <li>Text Analytics</li>
+                        </ul>
+                    </div>
+                    </li>
+
+
+
+                    <li>Hong Kong University of Science and Technology, <b>Global Business and Operations Management</b>. <i>Undergraduate degree, 2015.</i>
+                        <a style="padding-left: 8px" onclick="seeCourseworkHKUST()"><u>Coursework.</u></a>
+                    <div id="courseListHKUST" style="display: none">
+                        <ul>
+                            <li>Deal Making in Asia</li>
+                            <li>Capstone Consulting Project</li>
+                            <li>Supply Chain Management</li>
+                            <li>Innovation Management & Technology Entrepreneurship</li>
+                        </ul>
+                    </div>
+
+                    </li>
                     <li>National Chengchi University, <b>College of Commerce & Chinese Language Center</b>. <i>Exchange student, 2013-14.</i></li>
 
                 </ul>
@@ -215,6 +242,33 @@
         </div>
     </div>
 </footer>
+
+<script>
+function seeCourseworkCMU()
+{
+    if (document.getElementById('courseListCMU').style.display === 'block')
+    {
+        document.getElementById('courseListCMU').style.display = 'none';
+    }
+    else
+    {
+        document.getElementById('courseListCMU').style.display = 'block';
+    }
+}
+
+function seeCourseworkHKUST()
+{
+    if (document.getElementById('courseListHKUST').style.display === 'block')
+    {
+        document.getElementById('courseListHKUST').style.display = 'none';
+    }
+    else
+    {
+        document.getElementById('courseListHKUST').style.display = 'block';
+    }
+}
+
+</script>
 
 
 </html>
